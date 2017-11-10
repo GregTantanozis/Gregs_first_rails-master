@@ -1,6 +1,6 @@
 # README
 
-This is my first ruby on rails application and I am trying to figure out what's going on! I havr to read a lot of outside sources cause I am very insecure. Let's see what is going to happen.
+This is my first ruby on rails application and I am trying to figure out what's going on! I have to read a lot of outside sources. Let's see what is going to happen.
 
 Things you may want to cover:
 
