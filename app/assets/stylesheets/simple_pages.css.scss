@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$headers-color: #D5574B;
+$headers-font:'Roboto', sans-serif;
+
+.navbar-nav {
+	background-color: #444;
+	display: -webkit-box;
+}
+
+.navbar-nav li {
+	margin: 0 0.2em 0 0.2em;
+	padding-left: 1em;
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+ 
+nav a:hover {
+ 	background-color: #444;
+ 	color: $headers-color;
+ 	ransition: .3s background-color;
+}
+ 
+nav a:active {
+	color: $headers-color;
+	cursor: default;
+}
+
+body {
+	background-color: firebrick;
+	position: relative;
+}
+
+.covers {
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: space-between;
+  	margin: 2em 0 2em 0;
+}
+
+.headers-home h1 {
+	font-family: $headers-font;
+	color: $headers-color;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.headers-home h2 {
+	font-family: $headers-font;
+	text-align: center;
+}
+
+.date-home p {
+	text-align: right;
+	margin-bottom: -1.5rem;
+}
+
+html, body {
+	height: 100%;
+}
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -142px; 
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .page-wrap:after {
+	height: 25px; 
+}
+
+.site-footer {
+	background: orange;
+}
