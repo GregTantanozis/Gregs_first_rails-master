@@ -7,7 +7,8 @@ class SimplePagesController < ApplicationController
  # end
 
   def landing_page
-  	@products = Product.limit(3)
+  	# byebug
+  	@products = Product.limit(params["limit"].to_i)
   end
 
 end

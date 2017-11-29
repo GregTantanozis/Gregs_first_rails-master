@@ -19,13 +19,14 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    byebug
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(product_params)
-
+    byebug
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
