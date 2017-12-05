@@ -19,8 +19,8 @@
 
     <div class="container">
       <div class="row">
-        <% @products.each do |product| %>
-          <%= render partial: "shared/product", collection: @products %>
+        <% @products.each do |current_product| %>
+        <%= render partial: "shared/product_item", locals: {product1: current_product} %>
         <% end %>
       </div>
     </div>
