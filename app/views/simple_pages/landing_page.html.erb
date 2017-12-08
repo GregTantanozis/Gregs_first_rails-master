@@ -1,6 +1,4 @@
-<div class="container" id="landing-page-carousel">
-
-
+<div class="container-fluid" id="landing-page-carousel">
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -11,8 +9,8 @@
 
   <div class="carousel-inner" role="listbox">
     <% @products.all.each_with_index do |product, index| %>
-    <div class="carousel-item <%= " active" if index == 0 %>">
-        <img src="<%=product.image_url %>" alt="<%= product.name %>">
+    <div class="carousel-item <%= ' active' if index == 0 %>">
+      <%= link_to image_tag(product.image_url, class: 'img-fluid') %>
     </div>      
     <% end %>
   </div>

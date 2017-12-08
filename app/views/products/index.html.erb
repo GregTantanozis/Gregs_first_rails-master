@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<title>Products</title>
 
-  <head>
+<p id="notice"><%= notice %></p>
+<h1>Products</h1>
 
-    <title>Products</title>
+<div class="container">
+  <div class="row">
+    <% @products.each do |current_product| %>
+    <%= render partial: "shared/product_item", locals: {product1: current_product} %>
+    <% end %>
+  </div>
+</div>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  </head>
-
-  <body>
-
-    <p id="notice"><%= notice %></p>
-    <h1>Products</h1>
-
-    <div class="container">
-      <div class="row">
-        <% @products.each do |current_product| %>
-        <%= render partial: "shared/product_item", locals: {product1: current_product} %>
-        <% end %>
-      </div>
-    </div>
-  </body>
-
-  <br>
-  <%= link_to 'New Product', new_product_path %>
-</html>
+<br>
+<%= link_to 'New Product', new_product_path %>
