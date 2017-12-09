@@ -48,39 +48,47 @@ h1 {
 	font-family: $headers-font;
 	color: $headers-color;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 h2 {
 	font-family: $headers-font;
 	text-align: center;
-
+	color: antiquewhite;
 }
 
 h3 {
 	font-family: $headers-font;
-	color: #444;
+	color: antiquewhite;
 	padding-top: 1em;
 }
 
-h3:hover, a:hover, p:hover, strong:hover {
+.about p {
+	text-align: center;
+}
+
+.products h3:hover, .products a:hover, .products p:hover, .products strong:hover {
 	text-decoration: none;
 	color: $headers-color;
 }
 
 p {
-	color: #444;
+	color: antiquewhite;
 }
 
-strong {
-	color: #444;
+.products strong {
+	color: antiquewhite;
+}
+
+.contact p {
+	text-align: center;
 }
 
 a {
 	color: orange;
 }
 
-.description, .colour, .show, .edit, .destroy {
+.description, .genre, .show, .edit, .destroy {
 	display: inline;
 }
 
