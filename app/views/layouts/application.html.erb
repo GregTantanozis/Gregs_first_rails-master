@@ -20,10 +20,11 @@
 
   	<nav class="navbar-inverse navbar-fixed-top">
   	  <ul class="navbar-nav ">
-        <li><a href="/simple_pages/index">Home</a></li>
-        <li><a href="/simple_pages/about">About</a></li>
-        <li><a href="/simple_pages/contact">Contact</a></li>
-        <li><a href="/products">Products</a></li>
+        <li><%= link_to "Welcome", simple_pages_landing_page_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", simple_pages_about_path %></li>
+        <li><%= link_to "Contact", simple_pages_contact_path %></li>
+        <li><%= link_to "Products", products_path %></li>
   	  </ul>
   	</nav>
 
