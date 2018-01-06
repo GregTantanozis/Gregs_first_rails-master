@@ -84,6 +84,37 @@ nav a:active {
 	cursor: default;
 }
 
+
+
+			/* LOGIN */
+
+#new_user {
+  list-style: none;	
+  margin: 0 0 2em;
+  padding: 0;
+  text-align: center;
+}
+
+ul.pull-right li {
+	display: inline;
+}
+
+.checkbox {
+	color: antiquewhite;
+}
+
+#inputEmail, #inputPassword {
+	border-width: 4px;
+	border-color: $headers-color;
+}
+
+.btn-block {
+	background-color: orange;
+	border-color: orange;
+	color: antiquewhite;
+}
+
+
 			/* SEARCH BAR */
 
 #search {
