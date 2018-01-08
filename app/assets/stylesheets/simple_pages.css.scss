@@ -85,27 +85,43 @@ nav a:active {
 }
 
 
-
 			/* LOGIN */
 
-#new_user {
+#new_user, .links-sign {
   list-style: none;	
   margin: 0 0 2em;
   padding: 0;
   text-align: center;
 }
 
-ul.pull-right li {
+.links-sign a:hover {
+	text-decoration-line: none;
+	color: antiquewhite;
+}
+
+ul.pull-right {
 	display: inline;
 }
 
-.checkbox {
+ul.pull-right li a {
+	
+	position: absolute;
+	right: 2em;
+	top: 0;
+	color: black;
+}
+ul.pull-right li a:hover {
+	color: $headers-color;
+	text-decoration: none;
+}
+
+
+.checkbox-label {
 	color: antiquewhite;
 }
 
 #inputEmail, #inputPassword {
-	border-width: 4px;
-	border-color: $headers-color;
+	border-color: antiquewhite;
 }
 
 .btn-block {
@@ -114,12 +130,17 @@ ul.pull-right li {
 	color: antiquewhite;
 }
 
+.btn-block:hover {
+	background-color: $headers-color;
+	border-color: $headers-color;
+	color: antiquewhite;
+}
 
 			/* SEARCH BAR */
 
 #search {
-	position: fixed;
-	right: 2em;
+	position: absolute;
+	right: 8em;
 	top: -0.18em;
 }
 
