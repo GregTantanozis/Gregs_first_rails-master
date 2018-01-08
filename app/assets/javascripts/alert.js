@@ -1,4 +1,4 @@
-$(document).ajaxComplete(function (event, request) {
+/*$(document).ajaxComplete(function (event, request) {
 var msg = request.getResponseHeader('X-Message');
 var type = request.getResponseHeader('X-Message-Type');
 showajaxmessage(msg, type); //use whatever popup, notification or whatever plugin you want
