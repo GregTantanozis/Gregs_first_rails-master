@@ -1,6 +1,6 @@
 {
   "name": "Gregs_first_rails",
-  "private": true,
+  "private": false,
   "dependencies": {}
   "engines": {
     "node": ">=6.0.0",
