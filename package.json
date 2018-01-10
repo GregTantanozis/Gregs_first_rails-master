@@ -1,9 +1,5 @@
 {
   "name": "Gregs_first_rails",
-  "private": false,
+  "private": true,
   "dependencies": {}
-  "engines": {
-    "node": ">=6.0.0",
-    "yarn": ">=0.25.2"
-  }
 }
