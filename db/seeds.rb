@@ -25,3 +25,7 @@ Product.create(name: "Tomato", description: "Remix", image_url: "tomato.jpg", ge
 Product.create(name: "Skanville", description: "Remix", image_url: "skanville.jpg", genre: "Reggae", price: '1', href: "https://tarzanbros.bandcamp.com/track/ethiopians-train-to-skaville-tarzanbros-remix")
 
 Product.create(name: "B - Hop - Diggin", description: "Remix", image_url: "diggin.jpg", genre: "Reggae", price: '1', href: "https://tarzanbros.bandcamp.com/track/b-hop-diggin")
+
+Order.create(user_id: 1, product_id: 1, total: 10.0)
+
+Order.create(user_id: 1, product_id: 2, total: 5.0)
