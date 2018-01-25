@@ -47,7 +47,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
 
-group :production, :development, :test do
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
   gem 'pg'
 end
 
